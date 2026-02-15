@@ -26,5 +26,7 @@ function calculateAndDisplay(fn) {
 }
 
 ["add", "subtract", "multiply"].forEach((op) => {
-	document.getElementById(`btn-${op}`).addEventListener("click", () => calculateAndDisplay(window[op]));
+	document
+		.getElementById(`btn-${op}`)
+		.addEventListener("click", () => calculateAndDisplay(window[op]));
 });
